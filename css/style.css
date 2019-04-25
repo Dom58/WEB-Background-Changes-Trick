@@ -1,0 +1,32 @@
+		body{
+			background-color: #658390;
+			color: #dadada;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.navbar{
+			text-align: center;
+			margin-bottom: 5px;
+		}
+
+		#selectback{
+			height: 40px;
+			background-color: black;
+			color: white;
+			padding: 15px;
+			border:none;
+			border-radius: 8px;
+		}
+		#selectback:hover,#selectback:focus{
+			background-color: #3e5652;
+			transition: .4s;
+		}
+		.centered{
+			background-color: #3e5652;
+			text-align: center;
+			padding: 5px;
+			width: 80%;
+			margin-left: 9%;
+			box-shadow: 1px 3px 5px 3px  #dadada;
+		}
