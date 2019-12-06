@@ -1,32 +1,81 @@
-		body{
-			background-color: #658390;
-			color: #dadada;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		.navbar{
-			text-align: center;
-			margin-bottom: 5px;
-		}
+body{
+	background-color: #658390;
+	color: #dadada;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-		#selectback{
-			height: 40px;
-			background-color: black;
-			color: white;
-			padding: 15px;
-			border:none;
-			border-radius: 8px;
-		}
-		#selectback:hover,#selectback:focus{
-			background-color: #3e5652;
-			transition: .4s;
-		}
-		.centered{
-			background-color: #3e5652;
-			text-align: center;
-			padding: 5px;
-			width: 80%;
-			margin-left: 9%;
-			box-shadow: 1px 3px 5px 3px  #dadada;
-		}
+.navbar{
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+
+
+
+#selectback{
+	height: 40px;
+	background-color: black;
+	color: white;
+	padding: 15px;
+	border:none;
+	border-radius: 8px;
+}
+
+
+#black {
+	background-color: black;
+}
+
+
+#rosybrown {
+	background-color: #a54545;
+}
+
+#indigo {
+	background-color: indigo;
+}
+
+#green {
+	background-color: green;
+}
+
+#royalblue {
+	background-color: royalblue;
+}
+
+#brown {
+	background-color: brown;
+}
+
+#black, #rosybrown, #indigo, #green, #royalblue, #brown {
+	height: 40px;
+	color: white;
+	padding: 15px;
+	border:none;
+	border-radius: 8px;
+}
+
+#black:hover, #rosybrown:hover, #indigo:hover, #green:hover, #selectback:hover, #royalblue:hover, #brown:hover, #selectback:focus{
+	background-color: #3e5652;
+	transition: .4s;
+}
+
+.centered{
+	background-color: #3e5652;
+	text-align: center;
+	padding: 5px;
+	width: 80%;
+	margin-left: 9%;
+	box-shadow: 1px 3px 5px 3px  #dadada;
+	border-radius: 5px;
+	transition: .8s ease-in-out;
+}
+
+#theColor {
+	text-transform: capitalize;
+	text-shadow: 10px 30px 3px  black;
+	font-size: 35px;
+	margin-bott
+}
