@@ -6,13 +6,21 @@ body{
 	background-attachment: fixed;
 }
 
+a {
+	text-decoration: none;
+	color: #0f3897;
+	font-size: 18px;
+}
+
+button {
+	cursor: pointer;
+}
+
 .navbar{
 	text-align: center;
 	margin-bottom: 15px;
 
 }
-
-
 
 #selectback{
 	height: 40px;
@@ -23,11 +31,9 @@ body{
 	border-radius: 8px;
 }
 
-
 #black {
 	background-color: black;
 }
-
 
 #rosybrown {
 	background-color: #a54545;
@@ -49,7 +55,14 @@ body{
 	background-color: brown;
 }
 
-#black, #rosybrown, #indigo, #green, #royalblue, #brown {
+#black, 
+#rosybrown, 
+#indigo, 
+#green, 
+#royalblue, 
+#brown,
+.change-light, 
+.change-dark {
 	height: 40px;
 	color: white;
 	padding: 15px;
@@ -57,13 +70,21 @@ body{
 	border-radius: 8px;
 }
 
-#black:hover, #rosybrown:hover, #indigo:hover, #green:hover, #selectback:hover, #royalblue:hover, #brown:hover, #selectback:focus{
-	background-color: #3e5652;
+#black:hover, 
+#rosybrown:hover, 
+#indigo:hover, 
+#green:hover, 
+#selectback:hover, 
+#royalblue:hover, 
+#brown:hover, 
+#selectback:focus {
+	/* background-color: #3e5652; */
 	transition: .4s;
+	transform: scale(1.5);
 }
 
 .centered{
-	background-color: #3e5652;
+	/* background-color: #3e5652; */
 	text-align: center;
 	padding: 5px;
 	width: 80%;
@@ -78,4 +99,25 @@ body{
 	text-shadow: 10px 30px 3px  black;
 	font-size: 35px;
 	margin-bottom: 20px;
+}
+
+.center-buttons {
+	margin-top: 20px;
+}
+
+.modes {
+	right: 0;
+	position: absolute;
+	top: 60px !important;
+	margin-right: 40px;
+}
+
+.change-light {
+	background-color: white;
+	color: black !important;
+} 
+
+.change-dark {
+	background-color: #121212;
+	color: white !important;
 }
