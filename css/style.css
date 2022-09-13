@@ -1,9 +1,9 @@
-body{
+body {
 	background-color: #658390;
-	color: #dadada;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	color: #fff;
 }
 
 a {
@@ -62,7 +62,8 @@ button {
 #royalblue, 
 #brown,
 .change-light, 
-.change-dark {
+.change-dark,
+.modal-open {
 	height: 40px;
 	color: white;
 	padding: 15px;
@@ -83,7 +84,7 @@ button {
 	transform: scale(1.5);
 }
 
-.centered{
+.centered {
 	/* background-color: #3e5652; */
 	text-align: center;
 	padding: 5px;
@@ -94,7 +95,7 @@ button {
 	transition: .8s ease-in-out;
 }
 
-#theColor {
+#theColorn {
 	text-transform: capitalize;
 	text-shadow: 10px 30px 3px  black;
 	font-size: 35px;
@@ -112,12 +113,21 @@ button {
 	margin-right: 40px;
 }
 
-.change-light {
-	background-color: white;
-	color: black !important;
-} 
-
 .change-dark {
 	background-color: #121212;
 	color: white !important;
+}
+
+#light {
+	background-color: white;
+	color: black !important;
+}
+#dark {
+	background-color: #121212;
+	color: white !important;
+}
+
+
+#theColor {
+	text-transform: capitalize;
 }

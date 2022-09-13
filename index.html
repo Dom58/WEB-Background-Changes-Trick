@@ -3,10 +3,11 @@
 <head>
 	<title>Homepage</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/modal.css">
 </head>
 <body id="bg">
 	<div class="navbar">
-		<button onclick="changeBackground()" id="selectback"> CHANGE INTERFACE BACKGROUND COLOR... (#1)</button>
+		<button onclick="changeBackground()" id="selectback"> CHANGE OUTER BACKGROUND COLOR... (#1)</button>
 
 		<div class="center-buttons">
 			<button class="theChange" onclick="theInputColor('#a54545')"  id="rosybrown" >Rosy Brown</button>
@@ -18,14 +19,26 @@
 		</div>
 		
 		<div class="modes">
-			<button class="change-light" onclick="theInputColor('brown')"  id="light" >Light Mode</button>
-			<button class="change-dark" onclick="theInputColor('brown')"  id="dark" >Dark Mode</button>
+			<button class="modal-open" data-id="demo-modal" id="light">Light Mode</button>
+			<button class="modal-open" data-id="demo-modal" id="dark" >Dark Mode</button>
+		</div>
+	</div>
+
+	<div id="demo-modal" class="modal" role="dialog" tabindex="-1">
+		<div class="model-inner">
+			<div class="modal-header">
+				<h3>MESSAGE</h3>
+				<button class="modal-close" data-id="demo-modal" aria-label="Close">
+					&times;
+				</button>
+			</div>
+			<h3>Work in Progress... (WP)</h3>
 		</div>
 	</div>
 	
 	<div class="centered" id="centered">
 	   <h1>Welcome to the background tricks page -V2</h1>
-	   <h2> ===>[ <b id="theColor"> ###### </b> ] color changes.</h2>
+	   <h2> [<b id="theColor"> </b>] Color.</h2>
 		<hr>
 	   <p>This is any open source, you can use this projet wherever you want. </p>
 
@@ -38,5 +51,6 @@
 	</div>
 
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
 </body>
 </html>

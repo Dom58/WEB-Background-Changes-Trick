@@ -5,7 +5,7 @@ document.getElementById('centered').style.background= getBgColorStorage();
 function changeBackground() {
   if (isBlack == 0) {
     document.getElementById('bg').style="background-color:#52b0d6; color:white;";
-    document.getElementById('selectback').innerHTML="CHANGE WEB BACKGROUND COLOR... (#2)";
+    document.getElementById('selectback').innerHTML="CHANGE OUTER BACKGROUND COLOR... (#2)";
     document.getElementById('selectback').style="background-color:#464141;";
     isBlack=true;
     isBlack= 1;
